@@ -28,5 +28,17 @@ namespace CustomControls
                 //编写提交代码
             }
         }
+
+        private void BtnUp_Click(object sender, EventArgs e)
+        {
+            this.verticalProcessBar1.BarValue += 2;
+            this.lblPercent.Text = this.verticalProcessBar1.Precent;
+        }
+
+        private void BtnDown_Click(object sender, EventArgs e)
+        {
+            this.verticalProcessBar1.BarValue -= 2;
+            this.lblPercent.Text = this.verticalProcessBar1.Precent;
+        }
     }
 }

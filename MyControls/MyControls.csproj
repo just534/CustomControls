@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,10 +50,19 @@
     <Compile Include="TextBoxExtend.Designer.cs">
       <DependentUpon>TextBoxExtend.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerticalProcessBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VerticalProcessBar.Designer.cs">
+      <DependentUpon>VerticalProcessBar.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TextBoxExtend.resx">
       <DependentUpon>TextBoxExtend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerticalProcessBar.resx">
+      <DependentUpon>VerticalProcessBar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
