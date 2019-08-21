@@ -16,5 +16,17 @@ namespace CustomControls
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            int a = this.textBoxExtend1.BeginCheckEmpty();
+            int b = this.textBoxExtend1.BeginValidateRange("不能超过范围", 1, 30);
+            int c= this.textBoxExtend2.BeginValidateRange("不能超过范围", 20, 30);
+            int result = a * b;
+            if (result == 1)
+            {
+                //编写提交代码
+            }
+        }
     }
 }

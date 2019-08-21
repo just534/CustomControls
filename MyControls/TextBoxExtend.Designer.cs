@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            this.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

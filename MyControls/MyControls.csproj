@@ -50,5 +50,10 @@
       <DependentUpon>TextBoxExtend.cs</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TextBoxExtend.resx">
+      <DependentUpon>TextBoxExtend.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
